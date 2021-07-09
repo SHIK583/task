@@ -1,0 +1,204 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.logo{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo img
+{
+	width: 43%;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.navbar
+{
+ display: flex;
+ position: sticky;
+ justify-content: center;
+ align-items: center;
+ top: 0;
+ cursor: pointer;
+
+
+}
+.nav-list
+{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+
+}
+.nav-list li{
+
+list-style: none;
+padding: 26px 30px;
+}
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+.nav-list li a:hover{
+	background-color: grey;
+}
+.rigth-nav
+{
+	
+	width: 30%;
+	text-align: right;
+	
+}
+
+#search
+{
+	padding: 3px;
+	margin-top: 10px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+.background{
+	background: rgba(0, 0, 0, 0.7) url('back.jpg') ;
+	background-size: cover;
+	background-blend-mode:darken;
+
+}
+.main-box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family:"Times New Roman", Times, serif;
+	max-width: 50%;
+	margin: auto;
+	height: 80%;
+	}
+.firstsection
+{
+	height: 100vh;
+}
+.first-half
+{
+	width: 120%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	
+}
+.second-half
+{
+	width: 50%;
+}
+.second-half img
+{
+	width: 100%;
+	height: 100%;
+	border: 2px solid white;
+	border-radius: 170px;
+	margin: auto;
+	display: block
+	align-items: right;
+	justify-content: right;
+	margin-left: 110px;
+
+}
+.text{
+     font-size: 25px;
+
+}
+.text-big{
+	font-size: 15px;
+	margin-top: 20px;
+
+}
+.btn
+{
+	padding: 8px 20px;
+	margin: 40px 0;
+	border: 1px solid red;
+	border-radius: 8px;
+	font-size: 18px;
+	background: none;
+	color: white;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.secrigth
+{
+	height: 500px;
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	max-width: 80%;
+	margin: auto;
+}
+.prah{
+	padding: 0 65px;
+}
+.hamburger
+{
+position: absolute;
+display: none;
+cursor: pointer;
+right: 5%;
+top: 15px;
+}
+.line{
+	width: 3px;
+	background-color: white;
+	height: 4px;
+	margin: 3px 3px;
+}
+
+@media only screen and (max-width:1146px){
+
+	.nav-list
+	{
+		flex-direction: column;
+	}
+	.navbar
+	{
+		flex-direction: column;
+		height: 470px;
+		transition: all 0.3s ease-out;
+
+	}
+	.rigth-nav
+	{
+		text-align: center;
+	}
+	#search
+	{
+		width: 100%;
+	}
+	.hamburger
+	{
+		display: block;
+	}
+	.h-nav-resp{
+		height: 72px;
+
+	}
+	.n-nav-resp
+	{
+		opacity: none;
+	}
+	.main-box
+	{
+		flex-direction: column-reverse;
+		max-width: 100%;
+	}
+
+	
+
+
+}
